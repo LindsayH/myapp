@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  root 'static#home'
+
+  get '/about',to: 'static#about,as:: about'
+
   # get 'posts/index'
 
   # get 'posts/show'
